@@ -1,0 +1,152 @@
+body{
+    background-color: #000000;
+}
+.container{
+    margin: auto;
+    width: 50%;
+    border: 2px solid #aa7c1c;
+    border-radius: 25px;
+    padding: 10px 10px 10px 10px; 
+    color: #ffffff;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../media/red.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+    max-height: 660px;
+}
+.containerGAME{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    margin-top: 5px;
+    max-height: 240px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.title{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 33px;
+    width: fit-content;
+}
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: fit-content;
+}
+.containerICON{
+    margin: auto;
+    width: fit-content;
+}
+.imgGAME{
+    width: 100px;
+    border-radius: 25px;
+}
+
+.imgGAME:hover{
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.selected{
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.game{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    width: fit-content;
+    text-align: center;
+}
+.desc{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: fit-content;
+}
+#outerwilds{
+    font-family: 'Space Mono', monospace;
+    color: #ffffff;
+}
+#ashorthike{
+    font-family: 'VT323', monospace;
+    color: #ffffff;
+    font-size: 20px;
+}
+#destiny2{
+    font-family: 'Exo 2', sans-serif;
+    color: #ffffff;
+}
+#eldenring{
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+#portals{
+    background: -webkit-linear-gradient(left, #ff5d00 , #0065ff);
+    background: -o-linear-gradient(right, #ff5d00, #0065ff);
+    background: -moz-linear-gradient(right, #ff5d00, #0065ff);
+    background: linear-gradient(to right, #ff5d00 , #0065ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Helvetica', sans-serif;
+}
+#outerwildsDIV{
+    background-color: #213171;
+}
+#outerwildsH{
+    font-family: 'Space Mono', monospace;
+    color: #ffffff;
+}
+#ashorthikeDIV{
+    background-color: #e49f28;
+}
+#ashorthikeH{
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    color: #ffffff;
+}
+#destiny2DIV{
+    background-color: #807198;
+}
+#destiny2H{
+    font-family: 'Exo 2', sans-serif;
+    color: #ffffff;
+}
+#eldenringDIV{
+    background-color: #496b84;
+}
+#eldenringH{
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+}
+#portalsDIV{
+    background-color: #000000;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+#portalsH{
+    font-family: 'Helvetica', sans-serif;
+    color: #ffffff;
+}
+#futureDIV{
+    background-color: #f5bdb6;
+}
+#future{
+    text-align: left;
+}
+.backDIV{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	width: fit-content;
+	margin: auto;
+	width: 50%;
+}
+.link{
+    text-decoration: none;
+}
+.back{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}

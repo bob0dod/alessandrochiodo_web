@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/styleHOME.css">
+        <link rel="icon" href="icon_tab.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Alessandro Chiodo</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Hello there!</h1>
+            <a class="linkPAGE" href="travel.html">
+                <img class="pic" id="gaming" src="media/travel.jpeg">
+            </a>
+            <a class="linkPAGE" href="gaming.html">
+                <img class="pic" id="gaming" src="media/gaming.jpg">
+            </a>
+            <a class="linkPAGE" href="story.html">
+                <img class="pic" id="me" src="media/me.jpeg">
+            </a>
+            <br><br>
+            <h2 class="intro">My name is <strong style="color: #ff0000">Alessandro Chiodo </strong>and I'm 24 years old.</p>
+            <h2 class="intro">I'm a Junior Software Developer based in Italy.</p>
+            <h2 class="intro">Get to know me better by clicking on images above.</p>
+            <h2 class="intro">Stay in touch!</p>
+            <div class="containerSOCIAL">
+                <a class="linkSOCIAL" href="mailto:alessandrochiodo25@gmail.com">
+                    <img class="icon" id="mail" src="media/mail.png">
+                </a>
+                <a class="linkSOCIAL" href="https://www.linkedin.com/in/alessandro-chiodo/" target="_blank">
+                    <img class="icon" id="linkedin" src="media/linkedin.png">
+                </a>
+                <a class="linkSOCIAL" href="https://www.instagram.com/alessandrochiodo.tar.gz/" target="_blank">
+                    <img class="icon" id="instagram" src="media/instagram.png">
+                </a>
+                <a class="linkSOCIAL" href="https://open.spotify.com/user/11154144284?si=023cd3d8d93546de" target="_blank">
+                    <img class="icon" id="spotify" src="media/spotify.png">
+                </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        $('.containerSOCIAL').hover(function(){
+            $('.icon').toggleClass('icon-selected');
+        });
+    </script>
+</html>

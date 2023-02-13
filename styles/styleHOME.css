@@ -1,0 +1,66 @@
+body{
+	background-color: #000000;
+}
+.container{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	border: 2px solid #aa7c1c;
+	border-radius: 25px;
+	padding: 10px 10px 10px 10px;
+	width: 50%;
+	margin: auto;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../media/red.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+.title{
+	font-size: 33px;
+	width: fit-content;
+}
+.intro{
+	font-size: 20px;
+	width: fit-content;
+}
+.linkPAGE{
+	text-decoration: none;
+	height: 1px;
+	float: right;
+	position: relative;
+	top: -77px;
+}
+.pic{
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	vertical-align: top;
+	margin: 5px;
+}
+.pic:hover{
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+.containerSOCIAL{
+	width: fit-content;
+	margin: auto;
+}
+.linkSOCIAL{
+	text-decoration: none;
+	height: fit-content;
+}
+.icon{
+	width: 30px;
+	height: 30px;
+	filter: brightness(1);
+	filter: invert(1);
+}
+.icon-selected{
+	width: 30px;
+	height: 30px;
+	filter: brightness(0.5);
+	filter: invert(0.5);
+}
+.icon-selected:hover{
+	filter: brightness(1);
+	filter: invert(1);
+}
