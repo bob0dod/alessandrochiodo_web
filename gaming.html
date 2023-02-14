@@ -116,5 +116,15 @@
                 $(this).addClass('selected');
             }
         });
+        $('p').click(function(){
+            if ($(this).hasClass('pSelected')){
+                $('.pSelected').removeClass('pSelected');
+                $(this).addClass('subtext');
+            }
+            else{
+                $('.pSelected').removeClass('pSelected');
+                $(this).addClass('pSelected');
+            }
+        });
     </script>
 </html>

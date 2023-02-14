@@ -81,6 +81,11 @@ body{
     box-sizing: border-box;
 }
 
+.pSelected{
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
 .game{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
