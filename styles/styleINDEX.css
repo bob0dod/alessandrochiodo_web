@@ -64,7 +64,7 @@ body{
 	color: #ff0000;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 712px) {
     .pic{
       display: none;
     }
