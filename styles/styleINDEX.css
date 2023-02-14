@@ -25,9 +25,11 @@ body{
 .linkPAGE{
 	text-decoration: none;
 	height: 1px;
-	float: right;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	/*float: right; 
 	position: relative;
-	top: -77px;
+	top: -77px;*/
 }
 .pic{
 	width: 100px;
@@ -40,6 +42,25 @@ body{
 	border: 2px solid white;
 	box-sizing: border-box;
 }
+
+.subtext{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	display: none;
+	margin: 0;
+    padding: 0;
+	text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .pic {
+      display: none;
+    }
+	.subtext {
+		display: block;
+	}
+}
+
 .containerSOCIAL{
 	width: fit-content;
 	margin: auto;
