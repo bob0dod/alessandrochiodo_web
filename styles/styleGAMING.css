@@ -21,9 +21,6 @@ body{
     padding: 10px 10px 10px 10px;
     border-radius: 25px;
     margin-top: 5px;
-    max-height: 240px;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 .title{
     font-family: 'Press Start 2P', cursive;
