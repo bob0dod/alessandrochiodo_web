@@ -14,9 +14,9 @@ body{
 	overflow-x: hidden;
     overflow-y: auto;
 	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../media/red.png");
-	background-size: cover;
-	background-position: right;
+	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: right 0px top 0px;
 }
 .story{
 	font-size: 15px;
