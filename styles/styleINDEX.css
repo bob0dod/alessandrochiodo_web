@@ -7,7 +7,7 @@ body{
 	border: 2px solid #aa7c1c;
 	border-radius: 25px;
 	padding: 10px 10px 10px 10px;
-	width: 50%;
+	width: 75%;
 	margin: auto;
 	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../media/red.png");
 	background-size: contain;
@@ -45,11 +45,23 @@ body{
 
 .subtext{
 	font-family: 'Roboto', sans-serif;
-	color: #ffffff;
+	font-size: 20px;
 	display: none;
 	margin: 0;
-    padding: 0;
+    padding-top: 10px;
 	text-align: center;
+}
+
+#pTravel{
+	color: #ffff00;
+}
+
+#pGaming{
+	color: #ff8000;
+}
+
+#pMe{
+	color: #ff0000;
 }
 
 @media (max-width: 1000px) {
