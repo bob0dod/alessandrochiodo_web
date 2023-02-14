@@ -12,11 +12,11 @@ body{
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: right 0px top 0px;
-    min-height: 500px;
+    min-height: fit-content;
 }
 .containerGAME{
     margin: auto;
-    width: fit-content;
+    width: auto;
     height: fit-content;
     padding: 10px 10px 10px 10px;
     border-radius: 25px;
