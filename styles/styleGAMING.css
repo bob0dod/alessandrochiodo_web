@@ -31,16 +31,39 @@ body{
     width: fit-content;
 }
 
-@media (max-width: 1000px) {
-    .title {
-        font-size: 20px;
-    }
+.subtext{
+	display: none;
+	margin: 0;
+    padding-top: 10px;
+	text-align: center;
 }
-
 .subtitle{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     width: fit-content;
+}
+#pOuterWilds{
+    font-family: 'Space Mono', monospace;
+    color: white;
+}
+#pAShortHike{
+    font-family: 'VT323', monospace;
+    color: white;
+}
+#pDestiny2{
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+}
+#pEldenRing{
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+}
+#pPortals{
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+}
+#pFuture{
+    color: white;
 }
 .containerICON{
     margin: auto;
@@ -72,6 +95,19 @@ body{
     font-size: 15px;
     width: fit-content;
 }
+
+@media (max-width: 845px) {
+    .title{
+        font-size: 20px;
+    }
+    .imgGAME{
+        display: none;
+    }
+    .subtext{
+		display: block;
+	}
+}
+
 #outerwilds{
     font-family: 'Space Mono', monospace;
     color: #ffffff;
