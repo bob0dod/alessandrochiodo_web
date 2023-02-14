@@ -1,6 +1,6 @@
 # Ignora i file di sistema Mac
-.DS_store
-._.DS_store
+.DS_Store
+._.DS_Store
 ._gaming.html
 ._home.html
 ._story.html
