@@ -9,9 +9,10 @@ body{
     padding: 10px 10px 10px 10px; 
     color: #ffffff;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../media/red.png");
-	background-size: contain;
+	background-size: cover;
+	background-position: right;
 	background-repeat: no-repeat;
-    /*max-height: 660px;*/
+    min-height: 500px;
 }
 .containerGAME{
     margin: auto;
@@ -29,6 +30,13 @@ body{
     font-size: 33px;
     width: fit-content;
 }
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
 .subtitle{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -141,7 +149,7 @@ body{
 	font-size: 15px;
 	width: fit-content;
 	margin: auto;
-	width: 50%;
+	width: 75%;
 }
 .link{
     text-decoration: none;
