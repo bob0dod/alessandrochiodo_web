@@ -64,6 +64,13 @@ body{
 	color: #ff0000;
 }
 
+#h2Images{
+    display: block;
+}
+#h2Text{
+    display: none;
+}
+
 @media (max-width: 712px) {
     .pic{
       display: none;
@@ -76,6 +83,12 @@ body{
 		position: unset;
 		top: 0px;
 	}
+	#h2Images{
+        display: none;
+    }
+    #h2Text{
+        display: block;
+    }
 }
 
 .containerSOCIAL{
