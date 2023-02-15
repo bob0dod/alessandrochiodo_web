@@ -27,7 +27,6 @@ body{
     font-size: 33px;
     width: fit-content;
 }
-
 .subtext{
 	display: none;
 	margin: 0;
@@ -70,22 +69,18 @@ body{
     width: 100px;
     border-radius: 25px;
 }
-
 .imgGAME:hover{
     border: 2px solid white;
     box-sizing: border-box;
 }
-
 .selected{
     border: 2px solid white;
     box-sizing: border-box;
 }
-
 .pSelected{
     border: 2px solid white;
     box-sizing: border-box;
 }
-
 .game{
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -121,7 +116,6 @@ body{
         display: block;
     }
 }
-
 #outerwilds{
     font-family: 'Space Mono', monospace;
     color: #ffffff;
