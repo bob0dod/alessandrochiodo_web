@@ -14,7 +14,7 @@ body{
 	min-height: fit-content;
 	overflow-x: hidden;
     overflow-y: auto;
-	background: linear-gradient(rgba(0,0,0,0), rgba(253,184,44,.5)), url("../media/red-removebg.png");
+	background: url("../media/red-removebg.png"), linear-gradient(rgba(0,0,0,0), rgba(44, 51, 253, 0.5));
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: right 0px top 0px;
