@@ -51,6 +51,10 @@ body{
     font-family: 'VT323', monospace;
     color: white;
 }
+#pAssassinsCreed{
+    font-family: 'Italiana', serif;
+    color: white;
+}
 #pDestiny2{
     font-family: 'Exo 2', sans-serif;
     color: white;
@@ -104,7 +108,7 @@ body{
     display: none;
 }
 
-@media (max-width: 845px) {
+@media (max-width: 1000px) {
     .title{
         font-size: 20px;
     }
@@ -128,6 +132,11 @@ body{
 #ashorthike{
     font-family: 'VT323', monospace;
     color: #ffffff;
+    font-size: 20px;
+}
+#assassinscreed{
+    font-family: 'Italiana', serif;
+    color: #000000;
     font-size: 20px;
 }
 #destiny2{
@@ -162,6 +171,14 @@ body{
     font-family: 'VT323', monospace;
     font-size: 17px;
     color: #ffffff;
+}
+#assassinscreedDIV{
+    background-color: #ffffff;
+}
+#assassinscreedH{
+    font-family: 'Italiana', serif;
+    font-size: 17px;
+    color: #000000;
 }
 #destiny2DIV{
     background-color: #807198;
