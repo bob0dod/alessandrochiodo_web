@@ -17,6 +17,16 @@
         <title>Alessandro Chiodo - Gaming</title>
     </head>
     <body>
+        <header class="navbar">
+            <a href="index.html" class="logo">Alessandro</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="travel.html">Travel</a>
+                <a href="gaming.html">Gaming</a>
+                 <a href="story.html">Story</a>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </header>
         <div class="container">
             <h1 class="title">Let's talk about videogames</h1>
             <h2 class="subtitle">Since I was a child I've always been a videogame lover.</h2>
@@ -149,4 +159,34 @@
             }
         });
     </script>
+    <script>
+  // Riferimento al body e al pulsante toggle
+  const body = document.body;
+  const themeToggle = document.getElementById('theme-toggle');
+
+  // Controlla se esiste un tema salvato in localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if(savedTheme === 'light') {
+      body.classList.add('light-mode');
+      if(themeToggle) themeToggle.textContent = '🌞';
+  } else {
+      body.classList.remove('light-mode');
+      if(themeToggle) themeToggle.textContent = '🌙';
+  }
+
+  // Event listener per cambiare tema
+  if(themeToggle){
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+
+      if(body.classList.contains('light-mode')){
+        themeToggle.textContent = '🌞';
+        localStorage.setItem('theme', 'light'); // salva in localStorage
+      } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'dark'); // salva in localStorage
+      }
+    });
+  }
+</script>
 </html>

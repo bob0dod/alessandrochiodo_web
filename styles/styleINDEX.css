@@ -1,120 +1,268 @@
-body{
-	background-color: #000000;
-	height: fit-content;
+body {
+    background-color: #1C1C1E; /* dark gray-black */
+    color: #FFFFFF;
+    font-family: 'SF Pro', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
 }
-.container{
-	font-family: 'Roboto', sans-serif;
-	color: #ffffff;
-	border: 2px solid #fdb82c;
-	border-radius: 25px;
-	padding: 10px 10px 10px 10px;
-	width: 75%;
-	min-height: fit-content;
-	margin: auto;
-	/*background: url("../media/red-removebg.png"), linear-gradient(rgba(0,0,0,0), rgba(253,184,44,.5));*/
-	background: url("../media/red-removebg.png"), linear-gradient(rgba(0,0,0,0), rgba(44, 51, 253, 0.5));
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: right top;
+
+.container {
+    font-family: 'SF Pro', 'Roboto', sans-serif;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
+    width: 75%;
+    min-height: fit-content;
+    margin: 40px auto;
+
+    /* Neomorphism style: soft dark panel with subtle inner shadow */
+    background: linear-gradient(145deg, rgba(28,28,30,0.95), rgba(44,44,46,0.95)),
+                url("../media/red-removebg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    backdrop-filter: blur(12px);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.6),
+                -10px -10px 30px rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
 }
-.title{
-	font-size: 33px;
-	width: fit-content;
+
+.container:hover {
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.5),
+                -5px -5px 25px rgba(255,255,255,0.07);
 }
-.intro{
-	font-size: 20px;
-	width: fit-content;
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: fit-content;
 }
-.linkPAGE{
-	text-decoration: none;
-	height: 1px;
-	font-family: 'Roboto', sans-serif;
-	color: #ffffff;
-	float: right;
-	position: relative;
-	top: -77px;
+
+.intro {
+    font-size: 18px;
+    color: #E5E5EA; /* light gray */
+    width: fit-content;
 }
-.pic{
-	width: 100px;
-	height: 100px;
-	border-radius: 25px;
-	vertical-align: top;
-	margin: 5px;
+
+.linkPAGE {
+    text-decoration: none;
+    font-family: 'SF Pro', 'Roboto', sans-serif;
+    color: #0A84FF;
+    float: right;
+    position: relative;
+    top: -70px;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
 }
-.pic:hover{
-	border: 2px solid white;
-	box-sizing: border-box;
+
+.linkPAGE:hover {
+    color: #5AC8FA;
+    text-shadow: 0 0 6px rgba(90,200,250,0.5);
 }
-.subtext{
-	font-family: 'Kanit', sans-serif;
-	font-size: 20px;
-	display: none;
-	margin: auto;
-	border: 2px solid rgba(255, 255, 255, 0);
-	box-sizing: border-box;
-    padding: 10px 10px 10px 10px;
-	text-align: center;
-	width: fit-content;
+
+.pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    vertical-align: top;
+    margin: 5px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5),
+                -5px -5px 15px rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
 }
-.subtext:hover{
-	border: 2px solid white;
-	box-sizing: border-box;
+
+.pic:hover {
+    box-shadow: 0 0 20px rgba(255,255,255,0.3),
+                0 0 30px rgba(0,0,0,0.5);
+    transform: scale(1.05);
 }
-#pTravel{
-	color: #ffff00;
-}
-#pGaming{
-	color: #ff8000;
-}
-#pMe{
-	color: #ff0000;
-}
-#h2Images{
-    display: block;
-}
-#h2Text{
+
+.subtext {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
     display: none;
+    margin: auto;
+    border: 2px solid transparent;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    transition: all 0.3s ease;
 }
+
+.subtext:hover {
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 15px rgba(255,255,255,0.2),
+                inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+#pTravel { color: #FFD60A; }
+#pGaming { color: #FF9F0A; }
+#pMe { color: #FF453A; }
+
+#h2Images { display: block; }
+#h2Text { display: none; }
+
 @media (max-width: 712px) {
-    .pic{
-      display: none;
-    }
-	.subtext{
-		display: block;
-	}
-	.linkPAGE{
-		float: none;
-		position: unset;
-		top: 0px;
-	}
-	#h2Images{
-        display: none;
-    }
-    #h2Text{
-        display: block;
-    }
+    .pic { display: none; }
+    .subtext { display: block; }
+    .linkPAGE { float: none; position: unset; top: 0px; }
+    #h2Images { display: none; }
+    #h2Text { display: block; }
 }
-.containerSOCIAL{
-	width: fit-content;
-	margin: auto;
+
+.containerSOCIAL {
+    width: fit-content;
+    margin: auto;
 }
-.linkSOCIAL{
-	text-decoration: none;
-	height: fit-content;
+
+.linkSOCIAL {
+    text-decoration: none;
+    height: fit-content;
 }
-.icon{
-	width: 30px;
-	height: 30px;
-	filter: brightness(1);
-	filter: invert(1);
+
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(1) invert(1);
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
-.icon-selected{
-	width: 30px;
-	height: 30px;
-	filter: brightness(0.5);
-	filter: invert(0.5);
+
+.icon-selected {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0.7) invert(0.7);
 }
-.icon-selected:hover{
-	filter: brightness(1);
-	filter: invert(1);
+
+.icon-selected:hover {
+    filter: brightness(1) invert(1);
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(28,28,30,0.9); /* dark translucent */
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6),
+                -5px -5px 15px rgba(255,255,255,0.05);
+    margin: 20px auto;
+    width: 75%;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.5),
+                -3px -3px 12px rgba(255,255,255,0.07);
+}
+
+.navbar .logo {
+    font-family: 'SF Pro', 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.navbar .logo:hover {
+    color: #0A84FF;
+    text-shadow: 0 0 6px rgba(10,132,255,0.5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E5E5EA;
+    font-family: 'SF Pro', 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #0A84FF;
+    text-shadow: 0 0 6px rgba(10,132,255,0.5);
+}
+
+#theme-toggle {
+    background: rgba(44,44,46,0.8);
+    border: none;
+    border-radius: 12px;
+    padding: 6px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5),
+                -3px -3px 8px rgba(255,255,255,0.05);
+}
+
+#theme-toggle:hover {
+    box-shadow: 0 0 12px rgba(10,132,255,0.4),
+                inset 0 0 6px rgba(255,255,255,0.1);
+    transform: scale(1.1);
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background-color: #F2F2F7;
+    color: #1C1C1E;
+}
+
+body.light-mode .container {
+    background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(242,242,247,0.95)),
+                url("../media/red-removebg.png");
+    color: #1C1C1E;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1),
+                -10px -10px 30px rgba(255,255,255,0.7);
+}
+
+body.light-mode .title,
+body.light-mode .intro {
+    color: #1C1C1E;
+}
+
+body.light-mode .linkPAGE,
+body.light-mode .nav-links a,
+body.light-mode .navbar .logo {
+    color: #0A84FF;
+    text-shadow: none;
+}
+
+body.light-mode .pic {
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1),
+                -5px -5px 15px rgba(255,255,255,0.7);
+}
+
+body.light-mode #theme-toggle {
+    background: rgba(255,255,255,0.8);
+    color: #1C1C1E;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2),
+                -3px -3px 8px rgba(255,255,255,0.7);
+}
+
+/* Navbar LIGHT MODE */
+body.light-mode .navbar {
+    background: rgba(255,255,255,0.95);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1),
+                -5px -5px 15px rgba(255,255,255,0.7);
+}
+
+body.light-mode .navbar .logo,
+body.light-mode .nav-links a {
+    color: #1C1C1E;
+    text-shadow: none;
+}
+
+body.light-mode #theme-toggle {
+    background: rgba(255,255,255,0.8);
+    color: #1C1C1E;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2),
+                -3px -3px 8px rgba(255,255,255,0.7);
 }
