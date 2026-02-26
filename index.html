@@ -9,6 +9,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script defer src="scripts/theme.js"></script>
         <title>Alessandro Chiodo</title>
     </head>
     <body>
@@ -20,7 +21,7 @@
                 <a href="gaming.html">Gaming</a>
                  <a href="story.html">Story</a>
             </nav>
-            <button id="theme-toggle">🌙</button>
+            <button id="theme-toggle">&#127769;</button>
         </header>
         <div class="container">
             <h1 class="title">Hello there!</h1>
@@ -37,7 +38,7 @@
                 <p class="subtext" id="pMe">About me</p>
             </a>
             <br><br>
-            <h2 class="intro">My name is <strong style="color: #ff0000">Alessandro Chiodo </strong>and I'm 24 years old.</p>
+            <h2 class="intro">My name is <strong style="color: #ff0000">Alessandro Chiodo </strong>and I'm <span id="age"></span> years old.</p>
             <h2 class="intro">I'm a Junior Software Developer based in Italy.</p>
             <h2 class="intro" id="h2Images">Get to know me better by clicking on images above.</p>
             <h2 class="intro" id="h2Text">Get to know me better by clicking on titles above.</p>
@@ -57,40 +58,27 @@
                 </a>
             </div>
         </div>
+        <script>
+        const birthDate = new Date('1998-07-25');
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const hasHadBirthdayThisYear =
+            today.getMonth() > birthDate.getMonth() ||
+            (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+        if (!hasHadBirthdayThisYear) {
+            age--;
+        }
+
+        const ageElement = document.getElementById('age');
+        if (ageElement) {
+            ageElement.textContent = age;
+        }
+    </script>
     </body>
     <script>
         $('.containerSOCIAL').hover(function(){
             $('.icon').toggleClass('icon-selected');
         });
     </script>
-    <script>
-  // Riferimento al body e al pulsante toggle
-  const body = document.body;
-  const themeToggle = document.getElementById('theme-toggle');
-
-  // Controlla se esiste un tema salvato in localStorage
-  const savedTheme = localStorage.getItem('theme');
-  if(savedTheme === 'light') {
-      body.classList.add('light-mode');
-      if(themeToggle) themeToggle.textContent = '🌞';
-  } else {
-      body.classList.remove('light-mode');
-      if(themeToggle) themeToggle.textContent = '🌙';
-  }
-
-  // Event listener per cambiare tema
-  if(themeToggle){
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-
-      if(body.classList.contains('light-mode')){
-        themeToggle.textContent = '🌞';
-        localStorage.setItem('theme', 'light'); // salva in localStorage
-      } else {
-        themeToggle.textContent = '🌙';
-        localStorage.setItem('theme', 'dark'); // salva in localStorage
-      }
-    });
-  }
-</script>
 </html>
